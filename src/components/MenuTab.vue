@@ -17,14 +17,14 @@
 
 <script>
 export default {
-  name: "TabMenu",
+  name: "MenuTab",
   data() {
     return {
       items: [
-        { title: 'TOP', path: '/' },
-        { title: 'PROFILE', path: '/profile' },
-        { title: 'SKILLs', path: '/skills' },
-        { title: 'OUTPUTs', path: '/outputs' }
+        { title: "TOP", path: "/" },
+        { title: "PROFILE", path: "/profile" },
+        { title: "SKILLs", path: "/skills" },
+        { title: "OUTPUTs", path: "/outputs" }
       ]
     };
   }
@@ -35,9 +35,8 @@ export default {
 header {
   width: 100%;
   height:100px;
-  margin-left:0px;
-  background-color:rgb(255, 255, 255);
-  position: absolute;
+  background-color:rgb(255, 255, 255,0.9);
+  position: fixed;
   top: 0px;
   left:0px;
   z-index: 10;
@@ -47,7 +46,6 @@ header {
 ol {
   margin-top:0px;
   margin-left: 20px;
-  float: left;
   width: 480px;
   display: flex;
   align-content:center;
@@ -56,15 +54,14 @@ ol {
 }
 
 li {
-  float:left;
   width: 140px;
   height: 100px;
   margin-left: 3px;
   font-size: 15px;
-  background-color: #ffffff;
+  background-color:white;
   transition:all 0.5s;
   position: relative;
-  top:0px
+
 }
 
 li:hover {
@@ -74,7 +71,7 @@ li:hover {
 /*  router-linkをaタグに */
 a {
   display:block;
-  color: rgb(0, 0, 0);
+  color: black;
   text-decoration: none;
   line-height: 100px;
   font-weight:normal;

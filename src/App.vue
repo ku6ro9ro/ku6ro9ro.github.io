@@ -35,7 +35,7 @@ WebFont.load({
 })
 
 export default {
-  name: 'App',
+  name: 'app',
   components: {
     TabMenu
   }
