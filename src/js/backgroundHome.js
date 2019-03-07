@@ -95,7 +95,5 @@ export default function () {
   return script
 }
 
-
-
 // WEBPACK FOOTER //
 // ./src/js/backgroundHome.js

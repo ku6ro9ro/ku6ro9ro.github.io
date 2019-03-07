@@ -3,7 +3,7 @@
     <h1>
       Keisuke Goto's<br>Portfolio Site.
     </h1>
-    <div id="p5Canvas"></div>
+    <!-- <div id="p5Canvas"></div> -->
   </div>
 </template>
 
@@ -33,19 +33,13 @@ div{
 
 }
 
-canvas{
-  position:absolute;
-  top:0;
-  left:0px;
-}
-
 #p5Canvas {
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0%;
   left: 0%;
-  z-index: 100;
+  z-index: 0;
   pointer-events: none;
 }
 </style>

@@ -1,11 +1,7 @@
 <template>
   <div class="container">
     <div class="output">
-      <div
-        class="content"
-      v-for="i in 6"
-      :key=i
-    >
+      <div class="content">
       <h3> {{ name }} </h3>
       <p> {{ text }} </p>
       </div>
@@ -28,7 +24,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 div.container{
-  margin-top:300px;
+  margin-top:100px;
 }
 
 div.output {

@@ -35,7 +35,7 @@ export default {
 header {
   width: 100%;
   height:100px;
-  background-color:rgb(255, 255, 255,0.9);
+  background-color:rgb(255, 255, 255);
   position: fixed;
   top: 0px;
   left:0px;
