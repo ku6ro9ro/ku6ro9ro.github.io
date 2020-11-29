@@ -1,59 +1,55 @@
 <template>
-  <div>
+<body>
+  <div id=container>
     <h1>
-      Keisuke Goto's<br>Portfolio Site.
+      Keisuke's Portfolio Site.
     </h1>
-    <!-- <div id="p5Canvas"></div> -->
   </div>
+  </body>
 </template>
 
 <style scoped>
-body{
-  margin:-8px;
-  padding:0px;
-  overflow:hidden;
+html, body{
+  height:100%;
 }
 
-div{
-  margin-top: 100px;
-  text-align:left;
-  position:relative;
+body > #container{
+  height:auto;
+}
+
+#container{
+
+  min-height:100vh;
+  margin:-24px -16px;
+  padding-top:16px;
+  background-image: url(../assets/background.jpeg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat:no-repeat;
+  z-index:0;
 }
 
 h1{
-  z-index:1;
-  position:relative;
-  font-size:48px
-}
-
-div{
   position:absolute;
-  top:0;
-  left:0;
-
+  margin-top: 230px;
+  z-index:1;
+  font-size:5vw;
+  color:rgb(68, 61, 61);
+  letter-spacing:4px;
+  border-bottom:rgb(68, 61, 61) solid 4px;
 }
 
-#p5Canvas {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  z-index: 0;
-  pointer-events: none;
-}
-</style>
-
-<script>
-import sketch from '@/js/backgroundHome'
-
-export default {
-  name: 'Home',
-  mounted () {
-    const backgroundHome = sketch()
-    const P5 = require('p5')
-    new P5(backgroundHome, 'p5Canvas')
+@media(max-width:670px){
+  h1{
+    margin-top:240px;
+    font-size:10vw;
   }
 }
-</script>
 
+@media(min-width:720px){
+  h1{
+    font-size:36px;
+  }
+}
+</style>

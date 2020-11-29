@@ -14,24 +14,6 @@ WebFont.load({
     families: ['Noto Sans Japanese'],
     urls: ['https://fonts.googleapis.com/earlyaccess/notosansjapanese.css']
   },
-  loading: function () {
-    console.log('loading')
-  },
-  active: function () {
-    console.log('active')
-  },
-  inactive: function () {
-    console.log('inactive')
-  },
-  fontloading: function (familyName, fvd) {
-    console.log('fontloading', familyName, fvd)
-  },
-  fontactive: function (familyName, fvd) {
-    console.log('fontactive', familyName, fvd)
-  },
-  fontinactive: function (familyName, fvd) {
-    console.log('fontinactive', familyName, fvd)
-  }
 })
 
 export default {
@@ -40,9 +22,11 @@ export default {
     TabMenu
   }
 }
+
 </script>
 
 <style>
+
 #app {
   margin-top:0px;
   font-family: 'Noto Sans Japanese',"Avenir", Helvetica, Arial, sans-serif;

@@ -32,35 +32,37 @@ export default {
 </script>
 
 <style scoped>
+html, body{
+  width:100%;
+}
+
 header {
-  width: 100%;
   height:100px;
+  width:101%;
+  text-align: center;
   background-color:rgb(255, 255, 255);
   position: fixed;
   top: 0px;
-  left:0px;
+  left:-10px;
   z-index: 10;
   border-bottom:grey solid 1px;
 }
 
 ol {
+  position:absolute;
+  left:-30px;
   margin-top:0px;
-  margin-left: 20px;
-  width: 480px;
-  display: flex;
-  align-content:center;
-  padding: 0;
+  width: 100%;
   list-style: none;
 }
 
 li {
-  width: 140px;
+  width: 25%;
+  float:left;
   height: 100px;
-  margin-left: 3px;
   font-size: 15px;
   background-color:white;
-  transition:all 0.5s;
-  position: relative;
+  transition:all 0.2s;
 
 }
 
@@ -68,13 +70,31 @@ li:hover {
   background-color:grey
 }
 
-/*  router-linkをaタグに */
+
 a {
   display:block;
   color: black;
   text-decoration: none;
   line-height: 100px;
   font-weight:normal;
+}
 
-/*メディアクエリ書く*/}
+@media(max-width:670px){
+  li{
+    width:50%;
+    height:50px;
+  }
+  header{
+    height:100px;
+  }
+  a{
+    line-height:50px;
+  }
+}
+@media(min-width:720px){
+  ol{
+    width:720px;
+  }
+}
+
 </style>
